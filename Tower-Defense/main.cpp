@@ -3,7 +3,7 @@
 #else
     #include <stdlib.h>
 #endif
-#ifdef __APPLE__
+#ifdef _WIN32
 #include <SDL/SDL.h>
 #else
 #include <SDL.h>
@@ -22,7 +22,7 @@ int main ( int argc, char** argv )
     atexit(SDL_Quit);
 
     // create a new window
-    SDL_Surface* screen = SDL_SetVideoMode(640, 480, 16,
+    SDL_Surface* screen = SDL_SetVideoMode(800, 600, 16,
                                            SDL_HWSURFACE|SDL_DOUBLEBUF);
     if ( !screen )
     {
@@ -37,7 +37,7 @@ int main ( int argc, char** argv )
         printf("Unable to load bitmap: %s\n", SDL_GetError());
         return 1;
     }
-    
+
     // centre the bitmap on screen
     SDL_Rect dstrect;
     dstrect.x = (screen->w - bmp->w) / 2;
@@ -71,7 +71,7 @@ int main ( int argc, char** argv )
         } // end of message processing
 
         // DRAWING STARTS HERE
-        
+
         // clear screen
         SDL_FillRect(screen, 0, SDL_MapRGB(screen->format, 0, 0, 0));
 
