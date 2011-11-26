@@ -38,14 +38,22 @@
 		<Unit filename="cb.bmp" />
 		<Unit filename="include/database/database.h" />
 		<Unit filename="include/gameplay/gameplay.h" />
+		<Unit filename="include/gameplay/gameplay_part.h" />
 		<Unit filename="include/graphic/graphic.h" />
+		<Unit filename="include/graphic/graphic_part.h" />
 		<Unit filename="include/input/input.h" />
+		<Unit filename="include/input/input_part.h" />
 		<Unit filename="include/physic/physic.h" />
+		<Unit filename="include/physic/physic_part.h" />
 		<Unit filename="src/database/database.cpp" />
 		<Unit filename="src/gameplay/gameplay.cpp" />
+		<Unit filename="src/gameplay/gameplay_part.cpp" />
 		<Unit filename="src/graphic/graphic.cpp" />
+		<Unit filename="src/graphic/graphic_part.cpp" />
 		<Unit filename="src/input/input.cpp" />
+		<Unit filename="src/input/input_part.cpp" />
 		<Unit filename="src/main.cpp" />
+		<Unit filename="src/physic/physic (copy).cpp" />
 		<Unit filename="src/physic/physic.cpp" />
 		<Extensions>
 			<code_completion />
