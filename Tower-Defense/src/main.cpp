@@ -9,8 +9,14 @@
 #include <SDL.h>
 #endif
 
-int main ( int argc, char** argv )
-{
+#include "database/database.h"
+
+int main ( int argc, char** argv ) {
+
+    // usage for database:
+    // database::get_instance().remove(5);
+    // database::get_instance().add(my_game_object);
+
     // initialize SDL video
     if ( SDL_Init( SDL_INIT_VIDEO ) < 0 )
     {

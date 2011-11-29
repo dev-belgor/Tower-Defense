@@ -53,7 +53,7 @@
 		<Unit filename="src/input/input.cpp" />
 		<Unit filename="src/input/input_part.cpp" />
 		<Unit filename="src/main.cpp" />
-		<Unit filename="src/physic/physic_part.cpp" />
+		<Unit filename="src/physic/physic (copy).cpp" />
 		<Unit filename="src/physic/physic.cpp" />
 		<Extensions>
 			<code_completion />
