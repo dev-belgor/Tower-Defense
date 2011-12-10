@@ -3,20 +3,38 @@
 #else
     #include <stdlib.h>
 #endif
-#ifdef _WIN32
-#include <SDL/SDL.h>
-#else
-#include <SDL.h>
-#endif
+// TODO: move into graphic:
+//#include <SDL/SDL.h>
 
-#include "database/database.h"
+#include "gameplay/Gameplay.h"
+#include "input/Input.h"
+#include "graphic/Graphic.h"
+#include "physic/Physic.h"
 
 int main ( int argc, char** argv ) {
 
-    // usage for database:
-    // database::get_instance().remove(5);
-    // database::get_instance().add(my_game_object);
+    Component* gameplay = &Gameplay::getInstance();
+    Component* input = &Input::getInstance();
+    Component* graphic = &Graphic::getInstance();
+    Component* physic = &Physic::getInstance();
 
+    gameplay->init();
+    input->init();
+    graphic->init();
+    physic->init();
+
+    // TODO: exit function/running variable?!
+    while (1) {
+        input->update();
+        physic->update();
+        gameplay->update();
+        graphic->update();
+    }
+
+    return 0;
+
+    /*
+    --------------------------- MOVE THE FOLLOWING INTO GRAPHIC:
     // initialize SDL video
     if ( SDL_Init( SDL_INIT_VIDEO ) < 0 )
     {
@@ -95,5 +113,6 @@ int main ( int argc, char** argv ) {
 
     // all is well ;)
     printf("Exited cleanly\n");
-    return 0;
+
+    */
 }

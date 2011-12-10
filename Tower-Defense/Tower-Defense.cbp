@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -36,25 +38,27 @@
 			<Add option="`sdl-config --libs`" />
 		</Linker>
 		<Unit filename="cb.bmp" />
-		<Unit filename="include/database/database.h" />
-		<Unit filename="include/gameplay/gameplay.h" />
-		<Unit filename="include/gameplay/gameplay_part.h" />
-		<Unit filename="include/graphic/graphic.h" />
-		<Unit filename="include/graphic/graphic_part.h" />
-		<Unit filename="include/input/input.h" />
-		<Unit filename="include/input/input_part.h" />
-		<Unit filename="include/physic/physic.h" />
-		<Unit filename="include/physic/physic_part.h" />
-		<Unit filename="src/database/database.cpp" />
-		<Unit filename="src/gameplay/gameplay.cpp" />
-		<Unit filename="src/gameplay/gameplay_part.cpp" />
-		<Unit filename="src/graphic/graphic.cpp" />
-		<Unit filename="src/graphic/graphic_part.cpp" />
-		<Unit filename="src/input/input.cpp" />
-		<Unit filename="src/input/input_part.cpp" />
+		<Unit filename="include/database/BaseComponent.h" />
+		<Unit filename="include/database/Database.h" />
+		<Unit filename="include/gameplay/Gameplay.h" />
+		<Unit filename="include/gameplay/GameplayPart.h" />
+		<Unit filename="include/graphic/Graphic.h" />
+		<Unit filename="include/graphic/GraphicPart.h" />
+		<Unit filename="include/input/Input.h" />
+		<Unit filename="include/input/InputPart.h" />
+		<Unit filename="include/physic/Physic.h" />
+		<Unit filename="include/physic/PhysicPart.h" />
+		<Unit filename="include/util/Singleton.h" />
+		<Unit filename="src/database/Database.cpp" />
+		<Unit filename="src/gameplay/Gameplay.cpp" />
+		<Unit filename="src/gameplay/GameplayPart.cpp" />
+		<Unit filename="src/graphic/Graphic.cpp" />
+		<Unit filename="src/graphic/GraphicPart.cpp" />
+		<Unit filename="src/input/Input.cpp" />
+		<Unit filename="src/input/InputPart.cpp" />
 		<Unit filename="src/main.cpp" />
-		<Unit filename="src/physic/physic_part.cpp" />
-		<Unit filename="src/physic/physic.cpp" />
+		<Unit filename="src/physic/Physic.cpp" />
+		<Unit filename="src/physic/PhysicPart.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

@@ -1,6 +1,6 @@
 #include "database/database.h"
 
-int game_object::id() {
+int GameObject::id() {
     return ID;
 }
 
