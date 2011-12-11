@@ -4,7 +4,7 @@
     #include <stdlib.h>
 #endif
 // TODO: move into graphic:
-//#include <SDL/SDL.h>
+#include <SDL/SDL.h>
 
 #include "gameplay/Gameplay.h"
 #include "input/Input.h"
@@ -24,17 +24,17 @@ int main ( int argc, char** argv ) {
     physic->init();
 
     // TODO: exit function/running variable?!
-    while (1) {
+    while (0) {
         input->update();
         physic->update();
         gameplay->update();
         graphic->update();
     }
 
-    return 0;
+    //return 0;
 
-    /*
-    --------------------------- MOVE THE FOLLOWING INTO GRAPHIC:
+
+    //--------------------------- MOVE THE FOLLOWING INTO GRAPHIC:
     // initialize SDL video
     if ( SDL_Init( SDL_INIT_VIDEO ) < 0 )
     {
@@ -114,5 +114,5 @@ int main ( int argc, char** argv ) {
     // all is well ;)
     printf("Exited cleanly\n");
 
-    */
+
 }
