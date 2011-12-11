@@ -1,0 +1,102 @@
+Tower-Defense Map File:
+/////////////////////////////////////////////////////////////////
+//
+// This is a comment, it starts with //.
+// Comments can only start at the beginning of a line.
+//
+// A map file alway starts with "Tower-Defense Map File:"!
+//
+// There are certain variables you can set in a map file, these are:
+//
+// Version
+// Author
+// Description
+// Theme
+// Size
+//
+// Don't set the same variable twice!
+// Setting a variable has the form: <variable name>=<variable value>
+// The equality simbol (=) follows right after the variable name and the
+// variable value follows right after the equlity symbol (=), no spaces
+// in between!, no "' etc.
+// Everything after the equality symbol (=) until the new line is seen as the
+// variable value!
+//
+// Additionally to the variables there are sections:
+//
+// Moveable
+// Buildable
+// Graphics
+//
+// Sections have this form:
+//
+// <Section name>:
+// <Section content>
+//
+// For Moveable, Buildable & Graphics:
+//
+// These sections describe where buildings can be built, where one can move and
+// which graphic is used for which tile.
+// One tile is an integer number. Tiles in a row are seperated with comma ','
+// and a new row is started with a semicolon ';'.
+// WARNING: make sure the dimension matches the size!
+//
+// NOTE: these specifications may change in later versions.
+//
+/////////////////////////////////////////////////////////////////
+Version=0
+Author=Ben
+Description=This is the default map file.
+Theme=Default
+Size=16x16
+Moveable:
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+Buildable:
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+Graphics:
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;

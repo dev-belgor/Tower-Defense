@@ -4,6 +4,7 @@
 #include <list>
 #include <cstddef>
 #include "util/Singleton.h"
+#include "database/Map.h"
 
 // forward declaration for GameObject
 class PhysicPart;
