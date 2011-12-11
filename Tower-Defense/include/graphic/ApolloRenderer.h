@@ -1,9 +1,7 @@
+#ifndef __APOLLORENDERER__H__
+#define __APOLLORENDERER__H__
 
-#ifdef _WIN32
 #include <SDL/SDL.h>
-#else
-#include <SDL.h>
-#endif
 
 const int APOLLO_HARDWARE_RENDERER = 1;
 const int APOLLO_SOFTWARE_RENDERER = 0;
@@ -20,3 +18,5 @@ class ApolloRenderer
         Uint32 EndRenderTime;
 
 };
+
+#endif

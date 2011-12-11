@@ -1,5 +1,5 @@
 #include "graphic/ApolloRenderer.h"
-#include "database/database.h"
+#include "database/GameDatabase.h"
 
 
 ApolloRenderer::ApolloRenderer(int ScreenWidth, int ScreenHeight, int Bbp, int Renderer)
