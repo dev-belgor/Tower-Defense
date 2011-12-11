@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
-	<ActiveTarget name="Debug GNU/Linux" />
-	<File name="include/graphic/Graphic.h" open="1" top="1" tabpos="2">
-		<Cursor position="282" topLine="0" />
+	<ActiveTarget name="Debug Unix" />
+	<File name="include/graphic/Graphic.h" open="0" top="0" tabpos="2">
+		<Cursor position="274" topLine="0" />
 	</File>
-	<File name="src/database/Database.cpp" open="1" top="0" tabpos="4">
-		<Cursor position="11" topLine="0" />
-	</File>
-	<File name="src/main.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="197" topLine="0" />
+	<File name="src/main.cpp" open="1" top="1" tabpos="0">
+		<Cursor position="851" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>

@@ -14,10 +14,9 @@
 
 1322591029 source:/data/ben/dev/Tower-Defense/Tower-Defense/src/input/input_part.cpp
 
-1323543736 source:/data/ben/dev/Tower-Defense/Tower-Defense/src/main.cpp
+1323548445 source:/data/ben/dev/Tower-Defense/Tower-Defense/src/main.cpp
 	<cstdlib>
 	<stdlib.h>
-	<SDL/SDL.h>
 	"gameplay/Gameplay.h"
 	"input/Input.h"
 	"graphic/Graphic.h"
