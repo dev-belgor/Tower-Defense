@@ -6,7 +6,8 @@
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
-			<Target title="Debug">
+			<Target title="Debug GNU/Linux">
+				<Option platforms="Unix;" />
 				<Option output="bin/Debug/Tower-Defense" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
@@ -16,7 +17,8 @@
 					<Add directory="include" />
 				</Compiler>
 			</Target>
-			<Target title="Release">
+			<Target title="Release GNU/Linux">
+				<Option platforms="Unix;" />
 				<Option output="bin/Release/Tower-Defense" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="0" />
@@ -29,6 +31,18 @@
 					<Add option="-s" />
 				</Linker>
 			</Target>
+			<Target title="Debug Windows">
+				<Option platforms="Windows;" />
+				<Option output="Tower-Defense" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="Release Windows">
+				<Option platforms="Windows;" />
+				<Option output="Tower-Defense" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+			</Target>
 		</Build>
 		<Compiler>
 			<Add option="`sdl-config --cflags`" />
@@ -37,28 +51,94 @@
 		<Linker>
 			<Add option="`sdl-config --libs`" />
 		</Linker>
-		<Unit filename="cb.bmp" />
-		<Unit filename="include/database/BaseComponent.h" />
-		<Unit filename="include/database/Database.h" />
-		<Unit filename="include/gameplay/Gameplay.h" />
-		<Unit filename="include/gameplay/GameplayPart.h" />
-		<Unit filename="include/graphic/Graphic.h" />
-		<Unit filename="include/graphic/GraphicPart.h" />
-		<Unit filename="include/input/Input.h" />
-		<Unit filename="include/input/InputPart.h" />
-		<Unit filename="include/physic/Physic.h" />
-		<Unit filename="include/physic/PhysicPart.h" />
-		<Unit filename="include/util/Singleton.h" />
-		<Unit filename="src/database/Database.cpp" />
-		<Unit filename="src/gameplay/Gameplay.cpp" />
-		<Unit filename="src/gameplay/GameplayPart.cpp" />
-		<Unit filename="src/graphic/Graphic.cpp" />
-		<Unit filename="src/graphic/GraphicPart.cpp" />
-		<Unit filename="src/input/Input.cpp" />
-		<Unit filename="src/input/InputPart.cpp" />
-		<Unit filename="src/main.cpp" />
-		<Unit filename="src/physic/Physic.cpp" />
-		<Unit filename="src/physic/PhysicPart.cpp" />
+		<Unit filename="cb.bmp">
+			<Option target="Debug GNU/Linux" />
+			<Option target="Release GNU/Linux" />
+		</Unit>
+		<Unit filename="include/database/BaseComponent.h">
+			<Option target="Debug GNU/Linux" />
+			<Option target="Release GNU/Linux" />
+		</Unit>
+		<Unit filename="include/database/Database.h">
+			<Option target="Debug GNU/Linux" />
+			<Option target="Release GNU/Linux" />
+		</Unit>
+		<Unit filename="include/gameplay/Gameplay.h">
+			<Option target="Debug GNU/Linux" />
+			<Option target="Release GNU/Linux" />
+		</Unit>
+		<Unit filename="include/gameplay/GameplayPart.h">
+			<Option target="Debug GNU/Linux" />
+			<Option target="Release GNU/Linux" />
+		</Unit>
+		<Unit filename="include/graphic/Graphic.h">
+			<Option target="Debug GNU/Linux" />
+			<Option target="Release GNU/Linux" />
+		</Unit>
+		<Unit filename="include/graphic/GraphicPart.h">
+			<Option target="Debug GNU/Linux" />
+			<Option target="Release GNU/Linux" />
+		</Unit>
+		<Unit filename="include/input/Input.h">
+			<Option target="Debug GNU/Linux" />
+			<Option target="Release GNU/Linux" />
+		</Unit>
+		<Unit filename="include/input/InputPart.h">
+			<Option target="Debug GNU/Linux" />
+			<Option target="Release GNU/Linux" />
+		</Unit>
+		<Unit filename="include/physic/Physic.h">
+			<Option target="Debug GNU/Linux" />
+			<Option target="Release GNU/Linux" />
+		</Unit>
+		<Unit filename="include/physic/PhysicPart.h">
+			<Option target="Debug GNU/Linux" />
+			<Option target="Release GNU/Linux" />
+		</Unit>
+		<Unit filename="include/util/Singleton.h">
+			<Option target="Debug GNU/Linux" />
+			<Option target="Release GNU/Linux" />
+		</Unit>
+		<Unit filename="src/database/Database.cpp">
+			<Option target="Debug GNU/Linux" />
+			<Option target="Release GNU/Linux" />
+		</Unit>
+		<Unit filename="src/gameplay/Gameplay.cpp">
+			<Option target="Debug GNU/Linux" />
+			<Option target="Release GNU/Linux" />
+		</Unit>
+		<Unit filename="src/gameplay/GameplayPart.cpp">
+			<Option target="Debug GNU/Linux" />
+			<Option target="Release GNU/Linux" />
+		</Unit>
+		<Unit filename="src/graphic/Graphic.cpp">
+			<Option target="Debug GNU/Linux" />
+			<Option target="Release GNU/Linux" />
+		</Unit>
+		<Unit filename="src/graphic/GraphicPart.cpp">
+			<Option target="Debug GNU/Linux" />
+			<Option target="Release GNU/Linux" />
+		</Unit>
+		<Unit filename="src/input/Input.cpp">
+			<Option target="Debug GNU/Linux" />
+			<Option target="Release GNU/Linux" />
+		</Unit>
+		<Unit filename="src/input/InputPart.cpp">
+			<Option target="Debug GNU/Linux" />
+			<Option target="Release GNU/Linux" />
+		</Unit>
+		<Unit filename="src/main.cpp">
+			<Option target="Debug GNU/Linux" />
+			<Option target="Release GNU/Linux" />
+		</Unit>
+		<Unit filename="src/physic/Physic.cpp">
+			<Option target="Debug GNU/Linux" />
+			<Option target="Release GNU/Linux" />
+		</Unit>
+		<Unit filename="src/physic/PhysicPart.cpp">
+			<Option target="Debug GNU/Linux" />
+			<Option target="Release GNU/Linux" />
+		</Unit>
 		<Extensions>
 			<code_completion />
 			<debugger />
