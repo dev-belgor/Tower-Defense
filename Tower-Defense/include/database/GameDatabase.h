@@ -23,7 +23,7 @@ friend class GameDatabase;
 private:
     int ID; // unique ID within database
 public:
-    int id(void);
+    int id();
     PhysicPart* physic;
     InputPart* input;
     GameplayPart* gameplay;
@@ -34,9 +34,9 @@ class GameDatabase : public Singleton<GameDatabase> {
 friend class Singleton<GameDatabase>;
 private:
     GameDatabase();
-    std::list<GameObject> list;
     int id; // used to create unique ids
 public:
+    std::list<GameObject> list;
     void add(GameObject* GameObject);
     GameObject* operator [](int id);
     void remove(int id);

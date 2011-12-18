@@ -25,6 +25,7 @@ GameObject* GameDatabase::operator [] (int i) {
     while ( iter->id() != i ) {
         iter++;
     }
+    // TODO: code if the object couldn't be found!
     return (GameObject*)(&*iter);
 }
 
