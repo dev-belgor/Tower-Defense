@@ -8,8 +8,8 @@
 		<Build>
 			<Target title="Debug Unix">
 				<Option platforms="Unix;" />
-				<Option output="bin/Unix/Debug/tower-defense" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Unix/Debug/" />
+				<Option output="bin\Unix\Debug\tower-defense" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Unix\Debug\" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -18,8 +18,8 @@
 			</Target>
 			<Target title="Release Unix">
 				<Option platforms="Unix;" />
-				<Option output="bin/Unix/Release/tower-defense" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Unix/Release/" />
+				<Option output="bin\Unix\Release\tower-defense" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Unix\Release\" />
 				<Option type="0" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -31,8 +31,8 @@
 			</Target>
 			<Target title="Debug Windows">
 				<Option platforms="Windows;" />
-				<Option output="bin/Windows/Debug/Tower-Defense" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Windows/Debug/" />
+				<Option output="bin\Windows\Debug\Tower-Defense" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Windows\Debug\" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -40,12 +40,14 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+					<Add option="-lSDL_image" />
+					<Add library="..\SDL\lib\SDL_image.lib" />
 				</Linker>
 			</Target>
 			<Target title="Release Windows">
 				<Option platforms="Windows;" />
-				<Option output="bin/Windows/Release/Tower-Defense" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Windows/Release/" />
+				<Option output="bin\Windows\Release\Tower-Defense" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Windows\Release\" />
 				<Option type="0" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -54,54 +56,53 @@
 				<Linker>
 					<Add option="-s" />
 					<Add option="-lmingw32 -lSDLmain -lSDL" />
-					<Add directory="../SDL/lib" />
+					<Add directory="..\SDL\lib" />
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="`sdl-config --cflags`" />
-			<Add directory="../SDL/include/SDL" />
-			<Add directory="../SDL/include/SDL_image" />
+			<Add directory="..\SDL\include\SDL" />
+			<Add directory="..\SDL\include\SDL_image" />
 			<Add directory="include" />
 		</Compiler>
 		<Linker>
 			<Add library="SDL_image" />
 			<Add library="SDL" />
 			<Add library="SDLmain" />
-			<Add library="png" />
-			<Add library="jpeg" />
-			<Add library="tiff" />
+			<Add directory="..\SDL\lib" />
+			<Add directory="..\SDL\bin" />
 		</Linker>
-		<Unit filename="include/database/Component.h" />
-		<Unit filename="include/database/Database.h" />
-		<Unit filename="include/database/GameDatabase.h" />
-		<Unit filename="include/database/Map.h" />
-		<Unit filename="include/database/UiDatabase.h" />
-		<Unit filename="include/gameplay/Gameplay.h" />
-		<Unit filename="include/gameplay/GameplayPart.h" />
-		<Unit filename="include/graphic/ApolloRenderer.h" />
-		<Unit filename="include/graphic/Graphic.h" />
-		<Unit filename="include/graphic/GraphicPart.h" />
-		<Unit filename="include/graphic/Image.h" />
-		<Unit filename="include/input/Input.h" />
-		<Unit filename="include/input/InputPart.h" />
-		<Unit filename="include/physic/Physic.h" />
-		<Unit filename="include/physic/PhysicPart.h" />
-		<Unit filename="include/util/Singleton.h" />
-		<Unit filename="src/database/GameDatabase.cpp" />
-		<Unit filename="src/database/UiDatabase.cpp" />
-		<Unit filename="src/gameplay/Gameplay.cpp" />
-		<Unit filename="src/gameplay/GameplayPart.cpp" />
-		<Unit filename="src/graphic/ApolloRenderer.cpp" />
-		<Unit filename="src/graphic/Graphic.cpp" />
-		<Unit filename="src/graphic/GraphicPart.cpp" />
-		<Unit filename="src/graphic/Image.cpp" />
-		<Unit filename="src/input/Input.cpp" />
-		<Unit filename="src/input/InputPart.cpp" />
-		<Unit filename="src/main.cpp" />
-		<Unit filename="src/physic/Physic.cpp" />
-		<Unit filename="src/physic/PhysicPart.cpp" />
+		<Unit filename="include\database\Component.h" />
+		<Unit filename="include\database\Database.h" />
+		<Unit filename="include\database\GameDatabase.h" />
+		<Unit filename="include\database\Map.h" />
+		<Unit filename="include\database\UiDatabase.h" />
+		<Unit filename="include\gameplay\Gameplay.h" />
+		<Unit filename="include\gameplay\GameplayPart.h" />
+		<Unit filename="include\graphic\ApolloRenderer.h" />
+		<Unit filename="include\graphic\Graphic.h" />
+		<Unit filename="include\graphic\GraphicPart.h" />
+		<Unit filename="include\graphic\Image.h" />
+		<Unit filename="include\input\Input.h" />
+		<Unit filename="include\input\InputPart.h" />
+		<Unit filename="include\physic\Physic.h" />
+		<Unit filename="include\physic\PhysicPart.h" />
+		<Unit filename="include\util\Singleton.h" />
+		<Unit filename="src\database\GameDatabase.cpp" />
+		<Unit filename="src\database\UiDatabase.cpp" />
+		<Unit filename="src\gameplay\Gameplay.cpp" />
+		<Unit filename="src\gameplay\GameplayPart.cpp" />
+		<Unit filename="src\graphic\ApolloRenderer.cpp" />
+		<Unit filename="src\graphic\Graphic.cpp" />
+		<Unit filename="src\graphic\GraphicPart.cpp" />
+		<Unit filename="src\graphic\Image.cpp" />
+		<Unit filename="src\input\Input.cpp" />
+		<Unit filename="src\input\InputPart.cpp" />
+		<Unit filename="src\main.cpp" />
+		<Unit filename="src\physic\Physic.cpp" />
+		<Unit filename="src\physic\PhysicPart.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />
