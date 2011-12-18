@@ -3,6 +3,8 @@
 
 #include "database/Component.h"
 #include "util/Singleton.h"
+#include "SDL.h"
+#include "SDL_image.h"
 
 class Graphic : public Singleton<Graphic>, public Component {
 friend class Singleton<Graphic>;
