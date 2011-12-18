@@ -1,0 +1,7 @@
+Dependencies:
+=============
+-> libSDL
+-> libSDL_image
+    -> libpng
+    -> libjpeg
+    -> libtiff
