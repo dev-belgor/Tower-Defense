@@ -2,6 +2,8 @@
 #define __GRAPHIC__H__
 
 #include "util/Singleton.h"
+#include "SDL.h"
+#include "SDL_image.h"
 
 class Image
 {

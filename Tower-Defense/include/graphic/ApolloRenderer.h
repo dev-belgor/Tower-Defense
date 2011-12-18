@@ -2,6 +2,7 @@
 #define __APOLLORENDERER__H__
 
 #include <SDL/SDL.h>
+#include "database/GameDatabase.h"
 
 const int APOLLO_HARDWARE_RENDERER = 1;
 const int APOLLO_SOFTWARE_RENDERER = 0;

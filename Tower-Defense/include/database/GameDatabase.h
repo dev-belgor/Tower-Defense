@@ -16,10 +16,10 @@ class SoundPart;
 class AiPart;
 */
 
-class Database;
+class GameDatabase;
 
 class GameObject {
-friend class Database;
+friend class GameDatabase;
 private:
     int ID; // unique ID within database
 public:
@@ -30,10 +30,10 @@ public:
     GraphicPart* graphic;
 };
 
-class Database : public Singleton<Database> {
-friend class Singleton<Database>;
+class GameDatabase : public Singleton<GameDatabase> {
+friend class Singleton<GameDatabase>;
 private:
-    Database();
+    GameDatabase();
     std::list<GameObject> list;
     int id; // used to create unique ids
 public:

@@ -4,17 +4,17 @@ int GameObject::id() {
     return ID;
 }
 
-Database::Database() {
+GameDatabase::GameDatabase() {
     id = 0;
 }
 
-void Database::add(GameObject* GameObject) {
+void GameDatabase::add(GameObject* GameObject) {
     GameObject->ID = id;
     id++;
     list.push_back(*GameObject);
 }
 
-GameObject* Database::operator [] (int i) {
+GameObject* GameDatabase::operator [] (int i) {
     // valid range
     if (i >= id) {
         return NULL;
@@ -28,7 +28,7 @@ GameObject* Database::operator [] (int i) {
     return (GameObject*)(&*iter);
 }
 
-void Database::remove(int i) {
+void GameDatabase::remove(int i) {
     // valid range:
     if (i < id) {
         std::list<GameObject>::iterator iter;

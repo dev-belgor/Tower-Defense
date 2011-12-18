@@ -7,7 +7,7 @@ Image::Image(char *image_src)
 
 }
 
-Image::draw(int x, int y);
+void Image::draw(int x, int y)
 {
     SDL_Rect img_offset;
     img_offset.x = x;

@@ -16,7 +16,7 @@ ApolloRenderer::ApolloRenderer(int ScreenWidth, int ScreenHeight, int Bbp, int R
         }
     }
 
-    this.gamedatabase = &GameDatabase::getInstance();
+    gamedatabase = &GameDatabase::getInstance();
 }
 
 Uint32 ApolloRenderer::Render()
