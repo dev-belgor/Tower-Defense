@@ -16,6 +16,7 @@ class ApolloRenderer
         SDL_Surface* screen;
         Uint32 StartRenderTime;
         Uint32 EndRenderTime;
+        GameDatabase* gamedatabase;
 
 };
 

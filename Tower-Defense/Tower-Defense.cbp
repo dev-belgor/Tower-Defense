@@ -81,6 +81,7 @@
 		<Unit filename="include\graphic\ApolloRenderer.h" />
 		<Unit filename="include\graphic\Graphic.h" />
 		<Unit filename="include\graphic\GraphicPart.h" />
+		<Unit filename="include\graphic\Image.h" />
 		<Unit filename="include\input\Input.h" />
 		<Unit filename="include\input\InputPart.h" />
 		<Unit filename="include\physic\Physic.h" />
@@ -93,6 +94,7 @@
 		<Unit filename="src\graphic\ApolloRenderer.cpp" />
 		<Unit filename="src\graphic\Graphic.cpp" />
 		<Unit filename="src\graphic\GraphicPart.cpp" />
+		<Unit filename="src\graphic\Image.cpp" />
 		<Unit filename="src\input\Input.cpp" />
 		<Unit filename="src\input\InputPart.cpp" />
 		<Unit filename="src\main.cpp" />
